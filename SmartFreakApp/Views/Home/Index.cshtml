@@ -1,0 +1,16 @@
+﻿@model SmartFreakLib.ISmartFreakPage
+@{
+    ViewBag.Title = @Model.Label;
+}
+
+<div class="jumbotron">
+    <h1>@Model.Label</h1>
+    <p class="lead">SmartFreak тестовое приложение для построения MES приложений.</p>
+</div>
+
+@foreach(var part in Model.PageParts)
+{
+<div class="row">
+    @Html.Raw(part.GetContent(null));
+</div>
+}

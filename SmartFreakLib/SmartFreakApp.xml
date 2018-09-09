@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<app name="" assembly="">
+  
+  <roles>
+    <role name="" gorups="" users=""/>
+  </roles>
+  
+  <model>
+    <table name="main" type="master">
+      <field name="" type="" label="" key="" maxsize="" decription=""/>
+      <method type="select" name=""/>
+      <method type="update" name=""/>
+      <!--method type="button" name="" description=""/-->
+    </table>
+    <table name="detail" type="detail">
+      <field name="" label="" decription=""/>
+      <method type="select" name="" description="метод вызывается с передачей значений из мастер таблицы описанных в reletion"/>
+      <method type="update" name=""/>
+      <relation master="" master_fields="" detail_fields="" />
+    </table>
+  </model>
+  
+  <view>
+    <page name="" title="" desciption="">
+      <filter name="" table="" method="">
+        <param name="" method=""/>
+      </filter>
+      <commands>
+        <command name="" label="" method="" roles="" />
+      </commands>
+      <status>
+        <command name="" label="" method="" roles="" />
+      </status>
+      <part name="" bind="" description="bind: left|right|">
+        <!--tabs>
+          <tab name="" label=""/>
+        </tabs-->
+        <table name="" label="" tab="">
+          <field type="text|date|datetime|droplist|checkbox" name="" label="" format="" viewroles="" editroles="" method="get list"/>
+          <event name="onchange" method=""/>
+        </table>
+      </part>
+    </page>
+  </view>
+  
+  
+</app>

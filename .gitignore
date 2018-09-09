@@ -1,0 +1,13 @@
+*.obj
+*.log
+*.tlog
+*.pdb
+*~
+*.filters
+*.user
+*/bin/
+*/obj/
+.vs
+packages/
+.nuget/
+
